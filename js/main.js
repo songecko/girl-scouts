@@ -11,6 +11,7 @@ $(document).ready(function()
 		}
 	);
 	
+	// Voluntarios
 	$(".voluntariosMenu li a").hover(
 		function () 
 		{
@@ -38,7 +39,41 @@ $(document).ready(function()
 		e.preventDefault();
 	});
 	
-	$('.lightbox').modal();
+	// Promesa y Ley
+	$(".promesaLeyMenu li a").hover(
+		function () 
+		{
+			$(this).addClass("active");
+		},
+		function () 
+		{
+	 		if(!$(this).hasClass("selected")){
+	  			$(this).removeClass("active");		  			
+	  		}
+		}
+	);
+		
+	$(".promesaLeyMenu li a").click(function(e)
+	{
+		$(".promesaLeyMenu li a.selected").removeClass("selected");
+		$(".promesaLeyMenu li a.active").removeClass("active");
+		$(this).addClass("active selected");
+
+		var box = $(this).data("box");
+		$(".promesaLeyBox").hide();
+		$("#"+box).show();
+			
+		e.preventDefault();
+	});
+		
+	//Programa
+	$(".programaPopMenu li a").click(function(e)
+	{	
+		var pop = $(this).data("pop");
+		$("#"+pop).modal();
+				
+		e.preventDefault();
+	});
 	
 	//Contact
 	$(".form-contacto form").submit(function(e)

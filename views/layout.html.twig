@@ -21,27 +21,26 @@
 			<div class="container">
             	<div class="logo"><a href="{{ app.url_generator.generate('homepage') }}"><img src="{{ app.request.basepath }}/img/logo.png" /></a></div>
 	            	<ul class="menu clearfix">
-					<li><a href="{{ app.url_generator.generate('programa') }}"><img src="{{ app.request.basepath }}/img/menu-programa.png" /></a></li>
-	           		<li><a href="{{ app.url_generator.generate('quienes_somos') }}"><img src="{{ app.request.basepath }}/img/menu-quienes-somos.png" /></a></li>
-					<li><a href="{{ app.url_generator.generate('voluntarios') }}"><img src="{{ app.request.basepath }}/img/menu-voluntarios.png" /></a></li>
-					<li><a href="{{ app.url_generator.generate('news') }}"><img src="{{ app.request.basepath }}/img/menu-noticias.png" /></a></li>
-					<li><a href="#"><img src="{{ app.request.basepath }}/img/menu-tienda.png" /></a></li>
-					<li><a href="{{ app.url_generator.generate('contact') }}"><img src="{{ app.request.basepath }}/img/menu-contacto.png" /></a></li>
+					<li{% block menu_programa_class %}{% endblock %}><a href="{{ app.url_generator.generate('programa') }}"><img src="{{ app.request.basepath }}/img/menu-programa.png" /></a></li>
+	           		<li{% block menu_quienes_somos_class %}{% endblock %}><a href="{{ app.url_generator.generate('quienes_somos') }}"><img src="{{ app.request.basepath }}/img/menu-quienes-somos.png" /></a></li>
+					<li{% block menu_voluntarios_class %}{% endblock %}><a href="{{ app.url_generator.generate('voluntarios') }}"><img src="{{ app.request.basepath }}/img/menu-voluntarios.png" /></a></li>
+					<li{% block menu_news_class %}{% endblock %}><a href="{{ app.url_generator.generate('news') }}"><img src="{{ app.request.basepath }}/img/menu-noticias.png" /></a></li>
+					<li{% block menu_tienda_class %}{% endblock %}><a href="#"><img src="{{ app.request.basepath }}/img/menu-tienda.png" /></a></li>
+					<li{% block menu_contact_class %}{% endblock %}><a href="{{ app.url_generator.generate('contact') }}"><img src="{{ app.request.basepath }}/img/menu-contacto.png" /></a></li>
 	            </ul>    
 	            <ul class="redesSociales clearfix">
-	               <li><a href="#"><img src="{{ app.request.basepath }}/img/logo-pinterest.png" /></a></li>
-	               <li><a href="#"><img src="{{ app.request.basepath }}/img/logo-facebook.png" /></a></li>
+	               <li><a href="http://www.pinterest.com/gsusa" target="_blank"><img src="{{ app.request.basepath }}/img/logo-pinterest.png" /></a></li>
+	               <li><a href="https://www.facebook.com/CaribeGirlScoutsCouncil" target="_blank"><img src="{{ app.request.basepath }}/img/logo-facebook.png" /></a></li>
 	            </ul>
 			</div>
         </header>
         <div id="Navegacion">
         	<ol class="navegacionLateral">
-                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('programa') }}" class="etiqueta">Programa</a></li>  
-            	<li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('quienes_somos') }}" class="etiqueta">Quiénes Somos</a></li>
-                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('voluntarios') }}" class="etiqueta">Voluntarios</a></li>
-                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('news') }}" class="etiqueta">Noticias</a></li>
-                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a class="etiqueta">Tienda</a></li>
-                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('contact') }}" class="etiqueta">Contacto</a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('programa') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Programa</p></a></li>  
+            	<li class="clearfix"><a href="{{ app.url_generator.generate('quienes_somos') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Quiénes Somos</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('voluntarios') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Voluntarios</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('news') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Noticias</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('contact') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Contacto</p></a></li>
             </ol>
         </div>
         

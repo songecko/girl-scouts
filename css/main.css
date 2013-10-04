@@ -73,7 +73,7 @@ header {
 	cursor:pointer;
 }
 .carousel-indicators {
-	right: 596px;
+	left: 50%;
 	bottom: 39px;
 }
 .orange.carousel-indicators  .active { 
@@ -223,7 +223,7 @@ section {
 #Navegacion{
 	position: absolute;
 	z-index: 1000;
-	top: 276px;
+	top: 356px;
 	right: 108px;
 }
 .navegacionLateral .mostrar .flecha, .navegacionLateral .mostrar .etiqueta { display:block;}
@@ -253,7 +253,6 @@ section {
 	left: 50%;
 	top: 276px;
 	overflow-y:scroll;
-	
 }
 .contentPDF { 
 	width: 976px;
@@ -284,6 +283,22 @@ section {
 }
 .contentPDF .contenido h4 { color:#00a950; font-family:Arial, Helvetica, sans-serif;}
 .contentPDF .contenido p { color:#9099a7; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;}
+
+.boxPDF h4.title, .boxPDF p.text {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.boxPDF h4.title {
+	color: #00a950;
+	margin-bottom: 18px;
+	margin-top: 18px;
+}
+
+.boxPDF p.text {
+	color: #878787;
+	margin-bottom: 30px;
+}
 
 ul.voluntariosMenu {
 	width: 300px;
@@ -321,8 +336,64 @@ ul.voluntariosMenu li a.formasButton:hover, ul.voluntariosMenu li a.formasButton
 	background-position-y: -78px;
 }
 
+ul.promesaLeyMenu {
+	position: absolute;
+	left: 50%;
+	top: 605px;
+	margin-left: -86px;
+}
+
+ul.promesaLeyMenu li {
+	list-style: none;
+	float: left;
+}
+
+ul.promesaLeyMenu li a {
+	width: 95px;
+	height: 69px;
+	display: block;
+	background: url(../img/promesaLeyMenuSprite.png) no-repeat;
+}
+
+ul.promesaLeyMenu li a.leyButton {}
+ul.promesaLeyMenu li a.promesaButton {
+	background-position-x: -95px;
+}
+
+ul.promesaLeyMenu li a.promesaButton:hover, ul.promesaLeyMenu li a.promesaButton.active, 
+ul.promesaLeyMenu li a.leyButton:hover, ul.promesaLeyMenu li a.leyButton.active
+{
+	background-position-y: -74.5px;
+}
+
+.promesaLeyBox {
+	width: 818px;
+	margin-left: -446px; /* Half of width size */
+	z-index: 9999;
+	position: absolute;
+	left: 50%;
+	top: 156px;
+}
+
 .mapa {
 	width: 100%;
 	height: 355px;
 }
-.popHome{ position:absolute; left:0px; top:0px;}
+.popHome{
+	position: absolute;
+	left: 50%;
+	top: 220px;
+	margin-left: -390px;
+}
+
+ul.programaPopMenu {
+	position: absolute;
+	left: 50%;
+	top: 552px;
+	margin-left: -366px;
+}
+
+ul.programaPopMenu li {
+	list-style: none;
+	float: left;
+}

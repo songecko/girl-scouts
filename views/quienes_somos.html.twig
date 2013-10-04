@@ -1,17 +1,31 @@
 {% extends "layout.html.twig" %}
 
+{% block menu_quienes_somos_class %} class="active"{% endblock %}
+
 {% block content %}
 <section>
 	<div id="carousel" class="carousel slide">
 		<ol class="carousel-indicators text-center">
 			<li data-target="#carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel" data-slide-to="1"></li>
-			<!--<li data-target="#carousel" data-slide-to="2"></li>-->
+			<li data-target="#carousel" data-slide-to="2"></li>
 		</ol>
 		<div class="carousel-inner">
         	<div class="active item"><img src="{{ app.request.basepath }}/img/quienes-somos-03.jpg" class="fullwidth" /></div>
 			<div class="item"><img src="{{ app.request.basepath }}/img/quienes-somos-02.jpg" class="fullwidth" /></div>
-			<!-- <div class="item"><img src="img/home-03.jpg" /></div>-->
+			<div class="item">
+				<img src="{{ app.request.basepath }}/img/promesa-ley-01.jpg" class="fullwidth" />
+				<div id="boxPromesa" class="promesaLeyBox hide">
+					<img src="{{ app.request.basepath }}/img/pop-promesa.png" />
+				</div>
+				<div id="boxLey" class="promesaLeyBox">
+					<img src="{{ app.request.basepath }}/img/pop-ley.png" />
+				</div>
+				<ul class="promesaLeyMenu">
+					<li><a href="#" class="leyButton selected active" data-box="boxLey"></a></li>
+					<li><a href="#" class="promesaButton" data-box="boxPromesa"></a></li>
+				</ul>
+			</div>
 		</div>
                       
 		<a class="carousel-control left" href="#carousel" data-slide="prev"><img src="{{ app.request.basepath }}/img/left.png" width="52" height="72"></a>
