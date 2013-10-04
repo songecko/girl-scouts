@@ -130,9 +130,9 @@ header {
 	float:right;
 	width: 12px;
 }
-section .carousel-control{
+section .carousel-control {
 	position: absolute;
-	top: 50%;
+	top: 400px;
 	left: 15px;
 	width: 40px;
 	height: 40px;
@@ -222,7 +222,7 @@ section {
 .form-contacto textarea::-moz-placeholder { color:#ffffff; }
 #Navegacion{
 	position: absolute;
-	z-index: 1000;
+	z-index: 999999;
 	top: 356px;
 	right: 108px;
 }
