@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Girl Scouts</title>
+        <meta name="description" content="Sitio web de Girl Scouts">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="{{ app.request.basepath }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ app.request.basepath }}/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="{{ app.request.basepath }}/css/main.css">
+        <link rel="shortcut icon" href="{{ app.request.basepath }}/favicon.png" type="image/png" />
+        <script src="{{ app.request.basepath }}/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBwCR9tQy9eFG3I0DW4vhBN-CVnW0qD0vU&sensor=false"></script>  
+    </head>
+    <body>
+		<header>
+			<div class="container">
+            	<div class="logo"><a href="{{ app.url_generator.generate('homepage') }}"><img src="{{ app.request.basepath }}/img/logo.png" /></a></div>
+	            	<ul class="menu clearfix">
+					<li><a href="{{ app.url_generator.generate('programa') }}"><img src="{{ app.request.basepath }}/img/menu-programa.png" /></a></li>
+	           		<li><a href="{{ app.url_generator.generate('quienes_somos') }}"><img src="{{ app.request.basepath }}/img/menu-quienes-somos.png" /></a></li>
+					<li><a href="{{ app.url_generator.generate('voluntarios') }}"><img src="{{ app.request.basepath }}/img/menu-voluntarios.png" /></a></li>
+					<li><a href="{{ app.url_generator.generate('news') }}"><img src="{{ app.request.basepath }}/img/menu-noticias.png" /></a></li>
+					<li><a href="#"><img src="{{ app.request.basepath }}/img/menu-tienda.png" /></a></li>
+					<li><a href="{{ app.url_generator.generate('contact') }}"><img src="{{ app.request.basepath }}/img/menu-contacto.png" /></a></li>
+	            </ul>    
+	            <ul class="redesSociales clearfix">
+	               <li><a href="#"><img src="{{ app.request.basepath }}/img/logo-pinterest.png" /></a></li>
+	               <li><a href="#"><img src="{{ app.request.basepath }}/img/logo-facebook.png" /></a></li>
+	            </ul>
+			</div>
+        </header>
+        <div id="Navegacion">
+        	<ol class="navegacionLateral">
+                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('programa') }}" class="etiqueta">Programa</a></li>  
+            	<li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('quienes_somos') }}" class="etiqueta">Quiénes Somos</a></li>
+                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('voluntarios') }}" class="etiqueta">Voluntarios</a></li>
+                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('news') }}" class="etiqueta">Noticias</a></li>
+                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a class="etiqueta">Tienda</a></li>
+                <li class="clearfix"><span>&nbsp;</span><span class="flecha">&nbsp;</span><a href="{{ app.url_generator.generate('contact') }}" class="etiqueta">Contacto</a></li>
+            </ol>
+        </div>
+        
+        {% block content %}{% endblock %} 
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="{{ app.request.basepath }}/js/vendor/bootstrap.min.js"></script>
+
+        <script src="{{ app.request.basepath }}/js/main.js"></script>
+    </body>
+</html>

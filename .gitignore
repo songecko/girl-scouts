@@ -1,0 +1,11 @@
+# eclipse
+.project
+.metadata
+.buildpath
+.settings/*
+
+# os
+.DS_Store
+
+# misc
+vendor/*

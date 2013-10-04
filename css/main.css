@@ -1,0 +1,327 @@
+body {
+	background-color:#d3d3d3;
+}
+.fullwidth {
+	width: 100%;
+}
+.container { 
+	position:relative;
+	width: 1280px !important;
+}
+.logo { 
+	float: left;
+	padding-left: 60px;
+	padding-right: 45px;
+}
+.menu {
+	padding: 0;
+	float: left;
+}
+ul { margin: 0 0 10px 0px;} 
+.menu li {
+	display: inline;
+}
+.menu li a {
+	font-family: Arial;
+	font-size:11px;
+	text-decoration: none;
+	float:left;
+	padding: 10px;
+	color: #000000;
+	border-right:1px solid #CCC;
+	width:125px;
+}
+.menu li a:hover, .menu li.active a {
+	border-bottom:3px solid #00a950;
+}
+.redesSociales li {
+	display: inline;
+}
+.menu li a img {
+	padding-top: 34px;
+	padding-bottom: 5px; 
+	max-width: none;
+}
+
+.redesSociales li a img {
+	padding-top: 32px;
+	padding-left: 11px;
+	max-width: none;
+}
+.bgMenu { 
+	height: 75px; 
+	background-color:#FFF; 
+	width:1100px;
+}
+header {
+	z-index: 9999;
+	position: relative;
+	background: url(../img/bg-menu.png) repeat-x;
+}
+
+.carousel-indicators .active { 
+	background-color: none;
+	background:url(../img/active.png) no-repeat;
+	width: 22px;
+	height: 22px;
+}
+.carousel-indicators li { 
+	background-color: none;
+	background:url(../img/desactive.png) no-repeat;
+	width: 22px;
+	height: 22px;
+	cursor:pointer;
+}
+.carousel-indicators {
+	right: 596px;
+	bottom: 39px;
+}
+.orange.carousel-indicators  .active { 
+	background-color: none;
+	background:url(../img/active-1.png) no-repeat;
+	width: 22px;
+	height: 22px;
+}
+.orange.carousel-indicators li { 
+	background-color: none;
+	background:url(../img/desactive-1.png) no-repeat;
+	width: 22px;
+	height: 22px;
+	cursor:pointer;
+}
+.navegacionLateral li {height: 40px;}
+.navegacionLateral li span {
+	background-color: none;
+	background:url(../img/desactive.png) no-repeat;
+	width: 22px;
+	height: 22px;
+	cursor:pointer;
+	display: block;
+	float:right;
+	margin-top: 10px;
+
+}
+.navegacionLateral li .active, .navegacionLateral li.mostrar span:first-child {
+	background-color: none;
+	background:url(../img/active.png) no-repeat;
+	width: 22px;
+	height: 22px;
+	cursor:pointer;
+	display: block;
+	float:right;
+	margin-top: 10px;
+
+}
+#Navegacion ol { list-style-type:none;}
+.navegacionLateral li p { 
+	float:right;
+	padding: 10px;
+	font-family:"Times New Roman", Times, serif;
+	size:15px;
+	color:#00a950;
+	font-weight:bold;
+	text-transform:uppercase;
+	background-color:#FFFFFF;
+	margin:0px;
+}
+.navegacionLateral li .flecha {
+	background:url(../img/flecha-navegacion.png) no-repeat;
+	margin-top: 14px; 
+	float:right;
+	width: 12px;
+}
+section .carousel-control{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: none;
+	font-size: none;
+	font-weight: none;
+	line-height: none;
+	color: none;
+	text-align: none;
+	background: none;
+	border: none;
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+	border-radius: none;
+	opacity: 1;
+	filter: none;
+}
+.form-contacto {
+	background-color:#ffffff;
+	height: 317px;
+	padding: 50px 100px;
+}
+.form-contacto form {
+	max-width: 472px;
+}
+
+.form-contacto form #message {
+	font-size: 12px;
+	float: left;
+}
+
+section {
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.carousel {
+	margin-bottom: 0px !important;
+}
+.dato-contacto {
+	margin-top: 69px;
+}
+.tit-contacto{
+	padding-bottom: 50px;
+}
+.boton { 
+	color:#FFF;
+	background-color:#00a950;
+	height:25px;
+	width:116px;
+	float:right;
+	border:none;
+}
+.form-contacto .formCampos {
+	color:#7b7b7b;
+	width:221px;
+	height:36px;
+	background-color:#ededed;
+	border-bottom:3px solid #dadada;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	outline: none;
+	box-shadow: none !important;
+}
+.form-contacto .formTextarea {
+	color:#7b7b7b;
+	width: 458px;
+	height: 80px;
+	background-color:#ededed;
+	border-bottom:3px solid #dadada;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	outline: none;
+	box-shadow: none !important;
+}
+.form-contacto input::-webkit-input-placeholder { color:#ffffff; }
+.form-contacto input::-moz-placeholder { color:#ffffff; }
+.form-contacto textarea::-webkit-input-placeholder { color:#ffffff; }
+.form-contacto textarea::-moz-placeholder { color:#ffffff; }
+#Navegacion{
+	position: absolute;
+	z-index: 1000;
+	top: 276px;
+	right: 108px;
+}
+.navegacionLateral .mostrar .flecha, .navegacionLateral .mostrar .etiqueta { display:block;}
+.navegacionLateral .flecha, .navegacionLateral .etiqueta { display:none;}
+.lightbox{
+	z-index: 99999;
+	left: 540px;
+	top: 150px;
+	width: 965px;
+}
+.lightbox .close {
+	margin: 10px 10px 0 0;
+}
+.seleccionVoluntarios{
+	z-index: 9999;
+	position: absolute;
+	left: 527px;
+	top: 172px;
+}
+.boxPDF {
+	width: 996px;
+	max-height: 430px;
+	margin-left: -498px; /* Half of width size */
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 9999;
+	position: absolute;
+	left: 50%;
+	top: 276px;
+	overflow-y:scroll;
+	
+}
+.contentPDF { 
+	width: 976px;
+	border-bottom: 2px solid #F0F0F1;
+	height: 85px;
+	padding-top: 15px;
+}
+.numero { 
+	width: 4%;
+	float: left;
+	padding-left: 105px;
+	padding-top: 12px;
+	color:#c3c9d2;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.contenido { width:70%; float:left;}
+.download { 
+	width: 11%; 
+	float:left;
+	opacity: 0.3;
+	filter:alpha(opacity=50);
+}
+.download:hover {
+	opacity: 1;
+	filter:alpha(opacity=100);
+	cursor:pointer;
+}
+.contentPDF .contenido h4 { color:#00a950; font-family:Arial, Helvetica, sans-serif;}
+.contentPDF .contenido p { color:#9099a7; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px;}
+
+ul.voluntariosMenu {
+	width: 300px;
+	height: 78px;
+	position: absolute;
+	left: 50%;
+	top: 172px;
+	margin-left: -150px;
+}
+
+ul.voluntariosMenu li {
+	list-style: none;
+	float: left;
+}
+
+ul.voluntariosMenu li a {
+	width: 100px;
+	height: 78px;
+	display: block;
+	background: url(../img/voluntariosMenuSprite.png) no-repeat;
+}
+
+ul.voluntariosMenu li a.voluntariosButton {}
+ul.voluntariosMenu li a.recursosButton {
+	background-position-x: -100px;
+}
+ul.voluntariosMenu li a.formasButton {
+	background-position-x: -200px;
+}
+
+ul.voluntariosMenu li a.voluntariosButton:hover, ul.voluntariosMenu li a.voluntariosButton.active, 
+ul.voluntariosMenu li a.recursosButton:hover, ul.voluntariosMenu li a.recursosButton.active,
+ul.voluntariosMenu li a.formasButton:hover, ul.voluntariosMenu li a.formasButton.active
+{
+	background-position-y: -78px;
+}
+
+.mapa {
+	width: 100%;
+	height: 355px;
+}
