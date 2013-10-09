@@ -1,3 +1,48 @@
+function makeNewPosition(container) 
+{
+    // Get viewport dimensions (remove the dimension of the div)
+    container = (container || $(window));
+    var h = container.height() - 50;
+    var w = container.width() - 50;
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+    return [nh, nw];
+}
+
+function animateCookie(cookie) 
+{
+    var target = cookie;
+    var newq = makeNewPosition(target.parent());
+    var oldq = target.offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+
+    cookie.animate({
+        top: newq[0],
+        left: newq[1]
+    }, speed, function() {
+        animateCookie(cookie);
+    });
+
+};
+
+function calcSpeed(prev, next) 
+{
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+
+    var greatest = x > y ? x : y;
+
+    var speedModifier = 0.03;
+
+    var speed = Math.ceil(greatest / speedModifier);
+
+    return speed;
+}
+
+    
+    
 $(document).ready(function()
 {
 	$(".navegacionLateral li").hover(
@@ -84,17 +129,28 @@ $(document).ready(function()
 	});
 	
 	//Map
-	var mapOptions = {
-		center: new google.maps.LatLng(18.456041,-66.078579),
-		zoom: 16,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		disableDefaultUI: true
-	};
-	var map = new google.maps.Map($(".mapa").get(0), mapOptions);
+	if($(".mapa").get(0))
+	{
+		var mapOptions = {
+			center: new google.maps.LatLng(18.456041,-66.078579),
+			zoom: 16,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true
+		};
+		var map = new google.maps.Map($(".mapa").get(0), mapOptions);
+		
+		var marker = new google.maps.Marker({
+		      position: new google.maps.LatLng(18.454107,-66.078794),
+		      map: map,
+		      title:"Hello World!"
+		});	
+	}
 	
-	var marker = new google.maps.Marker({
-	      position: new google.maps.LatLng(18.454107,-66.078794),
-	      map: map,
-	      title:"Hello World!"
-	});	
+	//Cookies
+	animateCookie($('#cookie1'));
+	animateCookie($('#cookie2'));
+	animateCookie($('#cookie3'));
+	animateCookie($('#cookie4'));
+	animateCookie($('#cookie5'));
+	animateCookie($('#cookie6'));
 });

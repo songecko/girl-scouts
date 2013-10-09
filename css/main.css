@@ -76,6 +76,9 @@ header {
 	left: 50%;
 	bottom: 39px;
 }
+.metas .carousel-indicators {
+	left: 38%;
+}
 .orange.carousel-indicators  .active { 
 	background-color: none;
 	background:url(../img/active-1.png) no-repeat;
@@ -149,6 +152,14 @@ section .carousel-control {
 	border-radius: none;
 	opacity: 1;
 	filter: none;
+}
+section .metas .carousel-control {
+	top: 69px;
+	left: -76px;
+}
+section .metas .carousel-control.right {
+	left: auto;
+	right: -75px;
 }
 .form-contacto {
 	background-color:#ffffff;
@@ -396,4 +407,33 @@ ul.programaPopMenu {
 ul.programaPopMenu li {
 	list-style: none;
 	float: left;
+}
+
+.cookiesContainer1, .cookiesContainer2 {
+	position: absolute;
+	top: 160px;	
+}
+
+.cookiesContainer1 {
+	left: 50px;
+}
+.cookiesContainer2 {
+	right: 50px;
+}
+
+.cookiesContent {
+	position: relative;
+	width: 200px;
+	height: 500px;
+}
+
+.cookie {
+	position: absolute;
+}
+
+.metas {
+	position: absolute;
+	left: 50%;
+	margin-left: -360px;
+	top: 42%;
 }
