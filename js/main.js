@@ -84,6 +84,16 @@ $(document).ready(function()
 		e.preventDefault();
 	});
 	
+	var unslider = $('#carouselMetas').unslider({
+		delay: false,              //  The delay between slide animations (in milliseconds)
+	});
+	$('.unslider-arrow').click(function() {
+        var fn = $(this).data('slide');
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+	
 	// Promesa y Ley
 	$(".promesaLeyMenu li a").hover(
 		function () 

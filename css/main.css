@@ -436,4 +436,10 @@ ul.programaPopMenu li {
 	left: 50%;
 	margin-left: -360px;
 	top: 42%;
+	width: 719px;
+	height: 264px; 
 }
+
+#carouselMetas { min-width: 719px; min-height: 264px; position: relative; overflow: auto; }
+#carouselMetas li { list-style: none; }
+#carouselMetas ul li { float: left; }
