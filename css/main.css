@@ -397,6 +397,13 @@ ul.promesaLeyMenu li a.leyButton:hover, ul.promesaLeyMenu li a.leyButton.active
 	margin-left: -390px;
 }
 
+.videoHome{
+	position: absolute;
+	left: 52%;
+	top: 220px;
+	margin-left: -390px;
+}
+
 ul.programaPopMenu {
 	position: absolute;
 	left: 50%;
