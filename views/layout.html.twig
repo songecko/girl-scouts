@@ -34,6 +34,7 @@
 	            </ul>
 			</div>
         </header>
+        {% block navegacion %}
         <div id="Navegacion">
         	<ol class="navegacionLateral">
                 <li class="clearfix"><a href="{{ app.url_generator.generate('programa') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Programa</p></a></li>  
@@ -43,6 +44,7 @@
                 <li class="clearfix"><a href="{{ app.url_generator.generate('contact') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Contacto</p></a></li>
             </ol>
         </div>
+        {% endblock %} 
         
         {% block content %}{% endblock %} 
 

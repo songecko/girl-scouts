@@ -104,6 +104,17 @@ $(document).ready(function()
         nivelesUnslider.data('unslider')[fn]();
     });
 	
+	$('.carousel').on('slide.bs.carousel', function () {
+		$('#Navegacion').hide();
+	});
+		
+	$('.carousel').on('slid.bs.carousel', function () {
+		if($('.carousel .active').index('.carousel .item') == 0)
+		{
+			$('#Navegacion').show();
+		}
+	});
+	
 	// Promesa y Ley
 	$(".promesaLeyMenu li a").hover(
 		function () 
