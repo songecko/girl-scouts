@@ -4,6 +4,9 @@ body {
 .fullwidth {
 	width: 100%;
 }
+.backgroundMargin {
+	margin-top: 80px;
+}
 .container { 
 	position:relative;
 	width: 1280px !important;
@@ -163,7 +166,7 @@ section .metas .carousel-control.right {
 }
 section .niveles .carousel-control {
 	top: 179px;
-	left: 100px;
+	left: -100px;
 }
 section .niveles .carousel-control.right {
 	left: auto;
@@ -471,3 +474,91 @@ ul.programaPopMenu li {
 #carouselNiveles { min-width: 571px; min-height: 387px; position: relative; overflow: auto; }
 #carouselNiveles li { list-style: none; }
 #carouselNiveles ul li { float: left; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	
+	body {
+		padding: 0;
+	}
+	
+	ul {
+		margin: 0;
+	}
+	.container {
+		width: 320px !important;
+	}
+	
+	.logo {
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.menu li a {
+		float: none;
+		border-right: 0px solid #CCC;
+		width: 139px;
+	}
+	
+	.menu li a:hover, .menu li.active a {
+		padding-bottom: 30px;
+	}
+
+	.redesSociales {
+		text-align: center;
+	}
+	
+	section {
+		top: 340px;
+	}
+	
+	#Navegacion {
+		display: none;
+	}
+	
+	.backgroundMargin {
+		margin-top: 0;
+	}
+
+	.carousel-indicators {
+		left: 40%;
+		bottom: -63px;
+		padding-bottom: 15px;
+	}
+	
+	section .carousel-control {
+		top: 261px;
+		width: 18px;
+	}
+	
+	.promesaLeyBox {
+		display: none;
+	}
+
+	ul.voluntariosMenu {
+		top: 58px;
+	}
+	
+	.boxPDF {
+		width: 310px;
+		margin-left: -158px;
+		top: 218px;
+	}
+	
+	.form-contacto {
+		padding: 35px 17px 280px;
+	}
+	
+	.tit-contacto {
+		padding-bottom: 34px;
+	}
+	
+	.form-contacto .formCampos {
+		width: 251px;
+	}
+	
+	.form-contacto .formTextarea {
+		width: 251px;
+	}
+}
