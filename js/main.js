@@ -87,11 +87,21 @@ $(document).ready(function()
 	var unslider = $('#carouselMetas').unslider({
 		delay: false,              //  The delay between slide animations (in milliseconds)
 	});
-	$('.unslider-arrow').click(function() {
+	$('.metas .unslider-arrow').click(function() {
         var fn = $(this).data('slide');
         
         //  Either do unslider.data('unslider').next() or .prev() depending on the className
         unslider.data('unslider')[fn]();
+    });
+	
+	var nivelesUnslider = $('#carouselNiveles').unslider({
+		delay: false,              //  The delay between slide animations (in milliseconds)
+	});
+	$('.niveles .unslider-arrow').click(function() {
+        var fn = $(this).data('slide');
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        nivelesUnslider.data('unslider')[fn]();
     });
 	
 	// Promesa y Ley

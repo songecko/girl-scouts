@@ -45,7 +45,25 @@
 					</li>
 				</ul>
 			</div>
-			<div class="item"><img src="{{ app.request.basepath }}/img/programa-02.jpg" class="fullwidth" /></div>
+			<div class="item">
+				<img src="{{ app.request.basepath }}/img/programa-02.jpg" class="fullwidth" />
+				<div class="niveles">
+					<div id="carouselNiveles">
+						<!--  <ol class="carousel-indicators text-center">
+							<li data-target="#carouselMetas" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselMetas" data-slide-to="1"></li>
+						</ol> -->
+		
+						<ul>
+							<li><img src="{{ app.request.basepath }}/img/niveles1.png" /></li>
+							<li><img src="{{ app.request.basepath }}/img/niveles2.png" /></li>							
+						</ul>
+						
+					</div>							
+					<a class="carousel-control left unslider-arrow prev"  href="#carouselNiveles" data-slide="prev"><img src="{{ app.request.basepath }}/img/left-grey.png" width="52" height="72"></a>
+					<a class="carousel-control right unslider-arrow next" href="#carouselNiveles" data-slide="next"><img src="{{ app.request.basepath }}/img/right-grey.png" width="52" height="72"></a>
+				</div>
+			</div>
 			<div class="item">
 				<div class="cookiesContainer1">
 					<div class="cookiesContent">

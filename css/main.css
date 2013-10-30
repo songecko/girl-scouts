@@ -161,6 +161,14 @@ section .metas .carousel-control.right {
 	left: auto;
 	right: -75px;
 }
+section .niveles .carousel-control {
+	top: 179px;
+	left: 100px;
+}
+section .niveles .carousel-control.right {
+	left: auto;
+	right: -100px;
+}
 .form-contacto {
 	background-color:#ffffff;
 	height: 317px;
@@ -450,3 +458,16 @@ ul.programaPopMenu li {
 #carouselMetas { min-width: 719px; min-height: 264px; position: relative; overflow: auto; }
 #carouselMetas li { list-style: none; }
 #carouselMetas ul li { float: left; }
+
+.niveles {
+	position: absolute;
+	left: 50%;
+	margin-left: -285px;
+	top: 34%;
+	width: 571px;
+	height: 387px; 
+}
+
+#carouselNiveles { min-width: 571px; min-height: 387px; position: relative; overflow: auto; }
+#carouselNiveles li { list-style: none; }
+#carouselNiveles ul li { float: left; }
