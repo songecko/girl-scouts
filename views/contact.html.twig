@@ -1,4 +1,29 @@
 {% extends "layout.html.twig" %}
-{% use "contact_section.html.twig" %}
 
 {% block menu_contact_class %} class="active"{% endblock %}
+
+{% block content %}
+<section>
+	<div class="mapa"></div>
+	<div class="form-contacto">
+		<div class="row-fluid">
+			<div class="span6">
+				<img class="tit-contacto" src="{{ app.request.basepath }}/img/tit-contactanos.png" alt="Contactanos" />
+				<form action="#" method="post">
+					<input class="formCampos" type="text" placeholder="Nombre">
+					<input class="formCampos" type="text" placeholder="Correo Electrónico">
+					<input class="formCampos" type="text" placeholder="Teléfono">
+					<input class="formCampos" type="text" placeholder="Pueblo">
+					<textarea class="formTextarea" rows="3" placeholder="Mensaje"></textarea>
+					<br />
+					<p id="message" class="hide">Datos enviados correctamente. Te responderemos a la brevedad.</p>
+					<button type="submit" class="boton">Enviar</button>
+				</form>
+			</div>
+			<div class="span6">
+				<img class="dato-contacto" src="{{ app.request.basepath }}/img/txt-contactanos.png" alt="Caribe GS Council. 500 Calle Elisa Colberg, 00907 San Juan, Puerto Rico. (787) 721-5771. Horario: 8am - 5pm" />
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

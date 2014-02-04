@@ -37,11 +37,11 @@
         {% block navegacion %}
         <div id="Navegacion">
         	<ol class="navegacionLateral">
-                <li class="clearfix"><a href="#" data-section="programa"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Programa</p></a></li>  
-            	<li class="clearfix"><a href="#" data-section="quienesSomos"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Quiénes Somos</p></a></li>
-                <li class="clearfix"><a href="#" data-section="voluntarios"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Voluntarios</p></a></li>
-                <li class="clearfix"><a href="#" data-section="news"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Noticias</p></a></li>
-                <li class="clearfix"><a href="#" data-section="contact"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Contacto</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('programa') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Programa</p></a></li>  
+            	<li class="clearfix"><a href="{{ app.url_generator.generate('quienes_somos') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Quiénes Somos</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('voluntarios') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Voluntarios</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('news') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Noticias</p></a></li>
+                <li class="clearfix"><a href="{{ app.url_generator.generate('contact') }}"><span>&nbsp;</span><span class="flecha">&nbsp;</span><p class="etiqueta">Contacto</p></a></li>
             </ol>
         </div>
         {% endblock %} 

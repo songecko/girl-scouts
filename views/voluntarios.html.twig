@@ -1,5 +1,196 @@
 {% extends "layout.html.twig" %}
-{% use "voluntarios_section.html.twig" %}
 
 {% block menu_voluntarios_class %} class="active"{% endblock %}
 {% block navegacion %}{% endblock %}
+
+{% block content %}
+<section id="voluntarios">
+	<div id="carousel" class="carousel slide">
+		<!--<ol class="carousel-indicators text-center">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+		</ol>-->
+                      
+		<div id="boxVoluntarios" class="boxPDF">
+			<h4 class="title">Formas flexibles para ser voluntario</h4>
+			<p class="text">
+				¿Qué nuevos caminos va a explorar con las chicas? Las respuestas son infinitas. Pase un día de campamento,  . Construir casas de Habitat for Humanity con las niñas. O llevar el viaje de una semana en el extranjero. Elijas lo que elijas, el compromiso de tiempo es totalmente de usted, y usted estará haciendo un impacto duradero en las vidas de las niñas. Le daremos la información y el apoyo que necesita. Y usted tendrá un montón de diversión haciendo!
+				<br>
+	 			En la actualidad hay varias maneras (les llamamos vías) para que te involucres, simplemente, haciendo coincidir sus conocimientos, habilidades, intereses y experiencias de vida de las oportunidades disponibles en su municipio:
+				<br><br>
+				• CAMP: Desenchufe de sus demandas cotidianas y explorar al aire libre con un grupo de chicas con gustos similares. Comparta su pasión y talento únicos con amantes del aire libre del mañana.
+				<br><br>
+				• EVENTOS: Tener mucha energía, pero la limitada disponibilidad? Elija sus temas favoritos, y ayudar a las niñas a liberar su potencial. En medio de eventos de tres días, podrás interactuar con las chicas, excitar sus pasiones, y le ayudará a convertirse en lo mejor de sí.
+				<br><br>
+				• SERIE: Tener una habilidad o talento especial? Buscando una oportunidad de trabajar con las niñas sin un compromiso a largo plazo? Luego vienen compartir su pasión con un grupo centrado de las niñas que no pueden esperar para conocer a su habilidad o el ejercicio de su área de interés.
+				<br><br>
+				• Viajes: Ampliar horizontes niñas. Explora el mundo-o al menos la esquina de éste con un grupo de chicas que necesitan su ayuda para planear un viaje, ganar dinero, y prepararse para la aventura de viajar.
+				<br><br>
+				• Tropas: ¿Quieres participar en actividades interesantes, a lo largo del año escolar, con un pequeño grupo de chicas? Vas a compartir tanto como las chicas de su tropa ganan premios y distintivos, van de excursión, y aprender de los líderes comunitarios y expertos en temas de importancia para su comunidad.
+				<br><br>
+	 			Conviértase en un voluntario de Girl Scouts hoy. Introduce tu código postal para conectar con su concilio local.
+			</p>
+			<div class="contentPDF">
+				<div class="numero"><p>1.</p></div>
+				<div class="contenido">
+					<h4>Certificado Médico</h4>
+				</div>
+				<div class="download"><a href="{{ app.request.basepath }}/docs/Certificado-medico.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+			</div>
+			<div class="contentPDF">
+				<div class="numero"><p>2.</p></div>
+                            <div class="contenido">
+                            	<h4>Confirmación de Graduación</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Confirmacion-de-graduacion.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>3.</p></div>
+                            <div class="contenido">
+                            	<h4>Consentimiento para uso y divulgación de información personal y de salud</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Consentimiento-para-uso-y-divulgacion.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>4.</p></div>
+                            <div class="contenido">
+                            	<h4>Contrato de Talento</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Contrato-de-talento.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>5.</p></div>
+                            <div class="contenido">
+                            	<h4>Departamento de la Familia Oficina de Licenciamiento</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Departamento-de-la-familia.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>6.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud de Participación Ciudadanía</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-de-participacion-ciudadania.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>7.</p></div>
+                            <div class="contenido">
+                            	<h4>Formularios para la Matrícula de Adiestramientos y eventos relacionados programados por el Concilio</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Formularios-para-la-matricula-de-adiestramientos.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>8.</p></div>
+                            <div class="contenido">
+                            	<h4>Notificación de Privacidad</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Notificacion-de-privacidad.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>9.</p></div>
+                            <div class="contenido">
+                            	<h4>Notificación sobre la Política de Privacidad</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Notificacion-sobre-la-politica-de-privacidad.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>10.</p></div>
+                            <div class="contenido">
+                            	<h4>Permiso de Madre/ Padre o Encargado General</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Permiso-de-madre.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>11.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud Alfiler 10 Años</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-alfiler-10-anios.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>12.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud Cordón de Plata y Oro</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-cordon-de-plata-y-oro.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>13.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud de Evento</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-de-evento.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>14.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud de Salida de Tropa</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-de-salida-de-tropa.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>15.</p></div>
+                            <div class="contenido">
+                            	<h4>Solicitud para Campamentos</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Solicitud-para-campamentos.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30"></a></div>
+                         </div>
+                      </div>
+                      
+                      
+                     
+                      <div id="boxRecursos" class="boxPDF hide">
+                      	<h4 class="title">Recursos para Voluntarios</h4>
+						<p class="text">
+							Usted no está solo! Girl Scouts le ofrece apoyo de muchas maneras
+ 							<br><br>
+							Caribe Girl Scouts Council ofrece información sobre muchos temas,  trabajamos actividades a nivel conciliar, tales como camping, eventos que todas las niñas en el concilio de Girl Scouts pueden asistir, y ofrece materiales de programas de producción local. Su local de concilio de Girl Scouts también le puede ayudar con el entrenamiento, conseguir otros adultos para ayudar a las actividades de apoyo y eventos y oportunidades barrio del plan.
+ 							<br><br>
+							A partir de Girl Scouts de los EE.UU., que está apoyado por una amplia gama de materiales de programas y recursos en línea. La mayor parte de los recursos de GSUSA producidos están disponibles a través de Girl Scouts del consejo local, algunas tiendas consejo, o en línea en la tienda de Girl Scout. O llame a Girl Scout Merchandise Servicio al Cliente al (800) 221-6707.
+ 							<br><br>
+							Si usted tiene preguntas acerca de estos recursos y cómo se le puede ayudar a crear una experiencia maravilloso programa para niñas 5-17, pregunte a su Girl Scout personal local del consejo, padres, patrocinadores, y otros dirigentes y asesores. También asegúrese de revisar los recursos disponibles en español.
+						</p>
+                      	 <div class="contentPDF">
+                         	<div class="numero"><p>1.</p></div>
+                            <div class="contenido">
+                            	<h4>Cómo usar The Girl’s Guide to Girl Scouting
+para Cadettes, Seniors y Ambassadors</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/GGGS_Tips_sheet_c-s-a_Spanish.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                         <div class="contentPDF">
+                         	<div class="numero"><p>2.</p></div>
+                            <div class="contenido">
+                            	<h4>Cómo usar The Girl’s Guide
+to Girl Scouting para las
+Daisy, Brownies y Juniors</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/GGGS_Tips_sheet_d-b-j_Spanish.pdf" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                      </div>
+                      
+                      
+                      <div id="boxFormas" class="boxPDF hide">
+                      	 <div class="contentPDF">
+                         	<div class="numero"><p>1.</p></div>
+                            <div class="contenido">
+                            	<h4>Formularios Líderes</h4>
+                            </div>
+                            <div class="download"><a href="{{ app.request.basepath }}/docs/Formularios-Lideres.doc" target="_blank"><img src="{{ app.request.basepath }}/img/download-ov.png" width="104" height="30" border="0"></a></div>
+                         </div>
+                      </div>
+                      
+		<div class="carousel-inner">
+			<div class="active item">
+				<img src="{{ app.request.basepath }}/img/voluntarios-voluntarios.jpg" border="0" class="fullwidth" />
+				<ul class="voluntariosMenu">
+					<li><a href="#" class="voluntariosButton selected active" data-box="boxVoluntarios"></a></li>
+					<li><a href="#" class="recursosButton" data-box="boxRecursos"></a></li>
+					<li><a href="#" class="formasButton" data-box="boxFormas"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
