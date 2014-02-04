@@ -1,13 +1,4 @@
 {% extends "layout.html.twig" %}
+{% use "news_section.html.twig" %}
 
 {% block menu_news_class %} class="active"{% endblock %}
-
-{% block content %}
-<section>
-	<div id="carousel" class="carousel slide">
-		<div class="carousel-inner">
-			<div class="active item"><img src="{{ app.request.basepath }}/img/noticias-01.jpg" class="fullwidth" /></div>
-		</div>
-	</div>
-</section>
-{% endblock %}

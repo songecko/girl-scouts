@@ -1,7 +1,7 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-<section>
+<section class="active">
 	<div id="carousel" class="carousel slide" data-interval="false">
 		<ol class="orange carousel-indicators text-center">
 			<li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -25,4 +25,9 @@
 		<a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>-->
 	</div>
 </section>
+{{ render(app.request.baseUrl ~ '/programa-section') }}
+{{ render(app.request.baseUrl ~ '/quienes-somos-section') }}
+{{ render(app.request.baseUrl ~ '/voluntarios-section') }}
+{{ render(app.request.baseUrl ~ '/noticias-section') }}
+{{ render(app.request.baseUrl ~ '/contacto-section') }}
 {% endblock %}

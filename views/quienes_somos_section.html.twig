@@ -1,0 +1,31 @@
+{% block content %}
+<section id="quienesSomos">
+	<div id="qsCarousel" class="carousel slide">
+		<ol class="carousel-indicators text-center">
+			<li data-target="#qsCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#qsCarousel" data-slide-to="1"></li>
+			<li data-target="#qsCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+        	<div class="active item"><img src="{{ app.request.basepath }}/img/quienes-somos-03.jpg" class="fullwidth" alt="Quienes somos? Caribe Girl Scouts Council es el concilio que representa a nivel del caribe, la organizacion mas importante del mundo dedicada a niñas, Girl Scouts USA. Nuestra mision es ayudar a las niñas a desarrollar el valor, la confianza en si mismas y los principios para hacer del mundo un lugar mejor. Mediante programas de ciencia y tecnologia, negocios e introduccion a las finanzas, actividades al aire libre y conciencia sobre el medio ambiente, Girl Scouts ofrece a las niñas oportunidades para divertise y hacer amistades, ademas de ayudar a desarrollar habilidades para el liderazgo y mejorar la autoestima. Hoy, la organizacion a nivel nacional cuenta con 3,2 millones de Girl Scouts: 2,3 millons son niñas y 890.000 son miembros adultos que trabajan fundamentalmente como voluntarios." /></div>
+			<div class="item"><img src="{{ app.request.basepath }}/img/quienes-somos-02.jpg" class="fullwidth" alt="Que hacemos? Las niññas desarrollan su potencial de liderazgo mediante actividades que les permiten descubrir sus valores, habilidades y el mundo a su alrededor; conectarse con otras personas en un entorno y ponerse en accion para hacer una diferencia en el mundo. Nuestra estructura. Caribe Girl Scouts Council es uno de los 112 concilios en los que se divide Girl Scouts USA en los Estados Unidos. Nosotros ofrecemos servicios directo a las niñas, los voluntarios que trabajan con ellas y las comunidades locales en Puerto Rico. Girl Scouts es para todas las niñas y jovenes, desde el jardin de la infancia hasta la escuela secundaria." /></div>
+			<div class="item">
+				<img src="{{ app.request.basepath }}/img/promesa-ley-01.jpg" class="fullwidth" />
+				<div id="boxPromesa" class="promesaLeyBox hide">
+					<img src="{{ app.request.basepath }}/img/pop-promesa.png" alt="Promesa Girl Scout. Por mi honor yo trataré de servir a Dios y a mi patria, ayudar a las personas en todo momento, y vivir conforme la ley de las Girl Scouts." />
+				</div>
+				<div id="boxLey" class="promesaLeyBox">
+					<img src="{{ app.request.basepath }}/img/pop-ley.png" alt="La ley de Girl Scouts. Para servirle a dios y a mi pais. Yo me esforzare a: Ser honrada y justa, Cordial y servicial, Considerada y compasiva, Valiente y fuerte, Y responsable de lo que digo y hago. Y a: Respertarme a mi misma, Y a los demas, Respetar la autoridad, Usar los recursos de manera prudente, hacer del mundo un lugar mejor, y ser hermana de cada una de las Girl Scouts."/>
+				</div>
+				<ul class="promesaLeyMenu">
+					<li><a href="#" class="leyButton selected active" data-box="boxLey"></a></li>
+					<li><a href="#" class="promesaButton" data-box="boxPromesa"></a></li>
+				</ul>
+			</div>
+		</div>
+                      
+		<a class="carousel-control left" href="#qsCarousel" data-slide="prev"><img src="{{ app.request.basepath }}/img/left.png" width="52" height="72"></a>
+		<a class="carousel-control right" href="#qsCarousel" data-slide="next"><img src="{{ app.request.basepath }}/img/right.png" width="52" height="72"></a>
+	</div>
+</section>
+{% endblock %}
