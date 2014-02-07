@@ -152,11 +152,36 @@ $(document).ready(function()
 	});
 	
 	//Contact
-	$(".form-contacto form").submit(function(e)
+	$(".form-contacto form").validate(
 	{
-		$("#message").show();
-		
-		e.preventDefault();
+		onkeyup: false,
+		onclick: false,
+		onfocusout: false,
+		errorPlacement: function(error, element) 
+		{
+		},
+		highlight: function(element, errorClass, validClass) 
+		{
+		},
+		unhighlight: function(element, errorClass, validClass) 
+		{
+		},
+		invalidHandler: function(event, validator)
+		{
+		},
+		submitHandler: function(form)
+		{
+			$.ajax({
+                type: "POST",
+                url: '/cgspr/processForm.php',
+                data: $(form).serialize(),
+                success: function(data, textStatus, jqXHR)
+                {
+                	$("#message").show();
+                	$(form)[0].reset();
+                }
+			});
+		}
 	});
 	
 	//Map

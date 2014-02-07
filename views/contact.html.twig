@@ -10,11 +10,18 @@
 			<div class="span6">
 				<img class="tit-contacto" src="{{ app.request.basepath }}/img/tit-contactanos.png" alt="Contactanos" />
 				<form action="#" method="post">
-					<input class="formCampos" type="text" placeholder="Nombre">
-					<input class="formCampos" type="text" placeholder="Correo Electrónico">
-					<input class="formCampos" type="text" placeholder="Teléfono">
-					<input class="formCampos" type="text" placeholder="Pueblo">
-					<textarea class="formTextarea" rows="3" placeholder="Mensaje"></textarea>
+					<input class="formCampos" name="contact[name]" type="text" placeholder="Nombre"
+						data-rule-required="true" 
+					>
+					<input class="formCampos" name="contact[email]" type="text" placeholder="Correo ElectrÃ³nico"
+						data-rule-required="true"
+						data-rule-email="true" 
+					>
+					<input class="formCampos" name="contact[phone]" type="text" placeholder="TelÃ©fono">
+					<input class="formCampos" name="contact[pueblo]" type="text" placeholder="Pueblo">
+					<textarea class="formTextarea" name="contact[message]"  rows="3" placeholder="Mensaje"
+						data-rule-required="true"
+					></textarea>
 					<br />
 					<p id="message" class="hide">Datos enviados correctamente. Te responderemos a la brevedad.</p>
 					<button type="submit" class="boton">Enviar</button>
