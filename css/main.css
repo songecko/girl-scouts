@@ -181,6 +181,18 @@ section .niveles .carousel-control.right {
 	max-width: 472px;
 }
 
+.form-contacto form input::-webkit-input-placeholder, .form-contacto form textarea::-webkit-input-placeholder {
+	color: #7b7b7b;
+} 
+.form-contacto form input:-moz-placeholder, .form-contacto form textarea:-moz-placeholder {
+	color: #7b7b7b;
+}
+.form-contacto form input::-moz-placeholder, .form-contacto form textarea::-moz-placeholder {
+	color: #7b7b7b;
+}
+.form-contacto form input:-ms-input-placeholder, .form-contacto form textarea:-ms-input-placeholder {
+    color: #7b7b7b;
+}
 .form-contacto form #message {
 	font-size: 12px;
 	float: left;
